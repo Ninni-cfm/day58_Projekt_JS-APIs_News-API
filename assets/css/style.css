@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+/* Hard reset, no margins and paddings for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Scrolling should always be smooth... */
+html {
+  scroll-behavior: smooth;
+  background: ivory;
+  color: #333;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/****************************************************************************/
+.header {
+  font-family: "UnifrakturMaguntia", cursive;
+  padding: 1vmin 5vmin;
+  position: sticky;
+  width: calc(100vw - 12vmin);
+  top: 0;
+  background: ivory;
+  z-index: 999;
+}
+.headerTitle {
+  font-size: 2em;
+  padding: 0.5vmin 5vmin;
+  border-top: 5px double #333;
+  border-bottom: 5px double #333;
+  display: grid;
+  grid-template-columns: 2fr 8fr 1fr;
+  align-items: center;
+}
+.headerTitle h1 {
+  font-size: 3em;
+  text-align: center;
+}
+.headerTitle p:first-of-type {
+  justify-self: start;
+}
+.headerTitle p:last-of-type {
+  justify-self: end;
+  text-align: right;
+}
+
+/****************************************************************************/
+.main {
+  padding: 1vmin 5vmin;
+  display: grid;
+  grid-template-columns: 15vw auto 15vw;
+  justify-items: stretch;
+  /*======================================================================*/
+  /*======================================================================*/
+  /*======================================================================*/
+}
+.mainQuery {
+  margin-right: 5px;
+  border: 1px solid #333;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1vmin;
+}
+.mainQuery label {
+  font-size: 1.2em;
+}
+.mainQuery label,
+.mainQuery button {
+  margin-top: 1vmin;
+}
+.mainQuery input,
+.mainQuery button,
+.mainQuery select {
+  font-size: 1.4em;
+  padding: 1vmin;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.mainQuery button {
+  padding: 1vmin;
+}
+.mainContent {
+  border: 1px solid #333;
+  min-height: 200vh;
+}
+.mainCommercials {
+  margin-left: 5px;
+  text-align: center;
+}
+.mainCommercials h3 {
+  padding: 1vmin 0;
+}
+.mainCommercials div {
+  border: 5px double #333;
+  padding: 5%;
+  margin: 1vmin 1vmin;
+}
+.mainCommercials div:nth-of-type(1) {
+  font-size: 3vmin;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.mainCommercials div:nth-of-type(2) h4 {
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+.mainCommercials div:nth-of-type(2) p {
+  font-size: 1.1em;
+}
+.mainCommercials div:nth-of-type(2) a {
+  font-size: 1.3em;
+  color: #333333a0;
+}
+.mainCommercials img {
+  width: 100%;
+}

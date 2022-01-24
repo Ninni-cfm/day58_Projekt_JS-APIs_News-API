@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Ruhrpott News</title>
+</head>
+
+<body>
+
+    <!-- ***************************************************************** -->
+    <header class="header">
+        <div class="headerTitle">
+            <p>Parteiisch & Meinungsmachend</p>
+            <h1 class="">Ruhrpott News</h1>
+            <!-- <p>Sonderausgabe #1</p> -->
+            <p id=currentDate></p>
+        </div>
+    </header>
+
+
+    <main class="main">
+
+        <!-- ============================================================= -->
+        <form class="mainQuery">
+            <label for="txtKeywords">Suche </label>
+            <input type="text" name="txtKeywords" id="txtKeywords">
+
+            <label for="dateStart">Anfangsdatum</label>
+            <input type="date" name="dateStart" id="dateStart">
+
+            <label for="dateEnd">Enddatum</label>
+            <input type="date" name="dateEnd" id="dateEnd">
+
+            <label for="selectCountry">Land</label>
+            <select name="selectCountry" id="selectCountry">
+                <option value="">Alle</option>
+            </select>
+
+            <!-- <label for="selectLanguage">Sprache</label>
+            <select name="selectLanguage" id="selectLanguage">
+                <option value="">Alle</option>
+            </select> -->
+
+            <!-- <label for="selectCategory">Kategorie</label>
+            <select name="selectCategory" id="selectCategory"></select> -->
+
+
+            <button onclick="updateNews()">SUCHEN</button>
+
+        </form>
+
+
+        <!-- ============================================================= -->
+        <section class="mainContent">
+
+
+        </section>
+
+
+        <!-- ============================================================= -->
+        <aside class="mainCommercials">
+
+            <h3>Visit our Sponsors</h3>
+            <div>YOUR ADD HERE</div>
+            <div>
+                <h4>Knives needed?</h4>
+                <p>
+                    Our selection of kitchen knives includes options for nearly any foodservice establishment. You’ll
+                    find everything from oyster knives to cleavers.
+                </p>
+                <a href="">Best knives</a>
+            </div>
+            <div>
+                <img src="assets/img/ikea-logo.png" alt="ikea">
+            </div>
+
+        </aside>
+
+    </main>
+
+
+
+    <script src="assets/js/sources.js"></script>
+    <script src="assets/js/top-headlines.js"></script>
+    <script src="assets/js/everything.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
